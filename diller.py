@@ -34,7 +34,8 @@ class Cars():
                       "( to choose type mcd )\n")
                 c = input("your choice -> ")
                 C.look(self, c, b)
-
+        if a =="c":
+            C.buy_car(self)
 
 
 
@@ -99,65 +100,66 @@ class Cars():
     def buy_car(self):
         print('hi')
         a = input("what type do you want? -> ")
-        b=input ("input name of the car -> " )
+        b= input("input name of the car -> " )
         if a == '1':
             if b=='dg':
                 car = Cars.DG_car1
-                car.ptice = a*car.power%car.weight*car.tires_connection*100
+                car.price = a*car.power%car.weight*car.tires_connection*100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             if b == 'bwm':
                 car = Cars.BWM_car1
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             if b == 'mcd':
                 car = Cars.MCD_car1
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             if b == 'trd':
                 car = Cars.TRD_car1
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
         if a == '2':
             if b == 'dg':
                 car = Cars.DG_car2
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             if b == 'bwm':
                 car = Cars.BWM_car2
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             if b == 'mcd':
                 car = Cars.MCD_car2
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             if b == 'trd':
                 car = Cars.TRD_car2
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
         if a == '3':
             if b == 'dg':
                 car = Cars.DG_car3
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
-                print("Price = ", car.price)
+                car.price = a * car.power % car.weight * car.tires_connection * 100
+                Cars.__init__(self)
 
             if b == 'bwm':
                 car = Cars.BWM_car3
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
+                Cars.__init__(self)
 
             if b == 'mcd':
                 car = Cars.MCD_car3
-                car.ptice = a * car.power % car.weight * car.tires_connection * 100
+                car.price = a * car.power % car.weight * car.tires_connection * 100
                 print("Price = ", car.price)
-
+                Cars.__init__(self)
             else:
                 print("try one more time ")
                 Cars.__init__(self)
